@@ -3,47 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card | Ishraaq Hadequatul Fean</title>
+    <title>Profile Card | Ishraaq Hadequatul Faen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <article data-testid="test-profile-card" class="profile-card">
-        <figure>
-            <img src="https://via.placeholder.com/150" 
-                 alt="Aminat Morenikeji Dauda" 
-                 data-testid="test-user-avatar">
-        </figure>
-
-        <h1 data-testid="test-user-name">Aminat Morenikeji Dauda</h1>
+        <header>
+            <figure>
+                <img src="./Brandlogo.png" 
+                     alt="Logo of Ishraaq Hadequatul Faen" 
+                     data-testid="test-user-avatar" width="20%">
+            </figure>
+            <h1 data-testid="test-user-name">Aminat Morenikeji Dauda</h1>
+        </header>
         
         <p data-testid="test-user-bio">
-    200lvl student and Founder of Ishraaq Hadequatul Faen. I am an HTML beginner 
-    building a value-based brand rooted in Islamic ethics. My focus is creating 
-    accessible tech that rejects harmful industries and prioritizes integrity.
-</p>
+            200lvl student and Founder of Ishraaq Hadequatul Faen. I am building a 
+            value-based brand rooted in Islamic ethics, creating accessible tech 
+            that prioritizes integrity and rejects harmful industries.
+        </p>
 
-        <!-- The time will be injected here by JavaScript -->
-        <p>Current Time (UTC): <span data-testid="test-user-time"></span> ms</p>
+        <p>Current Time (UTC): <span data-testid="test-user-time" aria-live="polite"></span> ms</p>
 
         <nav data-testid="test-user-social-links">
-            <a href="https://github.com/Sabr9" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
-            <!-- Add your Instagram link here later -->
+            <ul>
+                <li>
+                    <a href="https://github.com/Sabr9/hng-stage-1b-task" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       data-testid="test-user-social-github">GitHub</a>
+                </li>
+                </ul>
         </nav>
 
         <section>
             <h3>Hobbies</h3>
             <ul data-testid="test-user-hobbies">
-                <li><strong>Calligraphy:</strong> Currently practicing traditional script design.</li>
-            <li><strong>Visual Arts:</strong> Exploring the intersection of resin and geometric patterns.</li>
-        </section>
+                <li><strong>Calligraphy:</strong> Traditional script design.</li>
+                <li><strong>Visual Arts:</strong> Resin and geometric patterns.</li>
+            </ul> </section>
 
         <section>
             <h3>Dislikes</h3>
             <ul data-testid="test-user-dislikes">
-                <li><b>Partnerships</b>: No alcohol, gambling, or interest-based (Riba) projects.</li>
-                <li><strong>Accessibility</strong>: 100% inclusive code (no one is left behind).</li>
-                <li><b>Ethics:</b>Privacy-first design; no deceptive "dark patterns."</li>
+                <li><strong>Unethical Partnerships:</strong> Alcohol, gambling, or Riba-based projects.</li>
+                <li><strong>Exclusionary Design:</strong> Non-inclusive or inaccessible code.</li>
+                <li><strong>Dark Patterns:</strong> Deceptive UX and privacy violations.</li>
             </ul>
         </section>
     </article>
